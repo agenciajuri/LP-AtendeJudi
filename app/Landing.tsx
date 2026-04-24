@@ -85,7 +85,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:shadow-soft"
         href="#conteudo"
       >
-        Pular para o conteudo
+        Pular para o conteúdo
       </a>
 
       <header className="sticky top-0 z-40 border-b border-black/10 bg-white/80 backdrop-blur">
@@ -108,7 +108,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
             <a className="hover:text-zinc-950" href="#produto">
               Produto
             </a>
-            <a className="hover:text-zinc-950" href="#prints">
+            <a className="hover:text-zinc-950" href="#demonstracao">
               Demonstração
             </a>
             <a className="hover:text-zinc-950" href="#preco">
@@ -122,8 +122,10 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
           <a
             className="inline-flex h-10 items-center justify-center rounded-lg bg-black px-4 text-sm font-medium text-white shadow-softer transition hover:bg-zinc-800"
             href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Quero diagnostico no WhatsApp
+            Diagnóstico no WhatsApp
           </a>
         </div>
       </header>
@@ -133,7 +135,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
         aria-label="Hero"
         className="relative overflow-hidden bg-black text-white"
       >
-        <div className="absolute inset-0 bg-grid opacity-70" aria-hidden="true" />
+        <div className="pointer-events-none absolute inset-0 bg-grid opacity-70" aria-hidden="true" />
         <div
           className="pointer-events-none absolute -left-32 top-24 h-[420px] w-[420px] rounded-full bg-white/10 blur-3xl"
           aria-hidden="true"
@@ -143,15 +145,15 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
           aria-hidden="true"
         />
 
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 pb-16 pt-12 md:grid-cols-12 md:items-center md:pb-24 md:pt-16">
-          <div className="md:col-span-5" id="conteudo">
+        <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 pb-16 pt-12 md:grid-cols-12 md:items-center md:pb-24 md:pt-16">
+          <div className="relative z-30 md:col-span-5" id="conteudo">
             <motion.p
               className="text-xs font-medium tracking-[0.24em] text-white/70"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: easeOut }}
             >
-              FEITO PARA ESCRITORIOS DE ADVOCACIA
+              FEITO PARA ESCRITÓRIOS DE ADVOCACIA
             </motion.p>
             <motion.h1
               className="mt-4 text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-5xl"
@@ -160,7 +162,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               transition={{ duration: 0.7, ease: easeOut, delay: 0.05 }}
             >
               Pare de adivinhar. Veja hoje o que mudou, o que vence e o que
-              exige acao agora.
+              exige ação agora.
             </motion.h1>
             <motion.p
               className="mt-4 max-w-xl text-pretty text-base text-white/70 md:text-lg"
@@ -168,8 +170,8 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: easeOut, delay: 0.12 }}
             >
-              Se voce vive apagando incendio em intimacao, prazo, audiencia e
-              status, o AtendeJuri te da uma visao clara da carteira e organiza
+              Se você vive apagando incêndio em intimação, prazo, audiência e
+              status, o AtendeJuri te dá uma visão clara da carteira e organiza
               o atendimento para sua equipe agir antes do risco virar problema.
             </motion.p>
 
@@ -179,11 +181,11 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: easeOut, delay: 0.16 }}
             >
-              Se voce sofre com isso, essa ferramenta e para voce.
+              Se você sofre com isso, essa ferramenta é para você.
             </motion.p>
 
             <motion.div
-              className="mt-7 flex flex-col gap-3 sm:flex-row"
+              className="relative z-50 mt-7 flex flex-col gap-3 sm:flex-row"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: easeOut, delay: 0.18 }}
@@ -191,14 +193,16 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               <a
                 className="inline-flex h-11 items-center justify-center rounded-lg bg-white px-5 text-sm font-medium text-black shadow-soft transition hover:bg-zinc-100"
                 href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Quero parar de perder prazo
+                Falar no WhatsApp
               </a>
               <a
                 className="inline-flex h-11 items-center justify-center rounded-lg border border-white/20 bg-white/0 px-5 text-sm font-medium text-white transition hover:bg-white/10"
                 href={demoLink}
               >
-                Ver o painel funcionando
+                Ver como funciona
               </a>
             </motion.div>
 
@@ -208,22 +212,22 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: easeOut, delay: 0.25 }}
             >
-              Linguagem simples. Acao rapida. Controle total da rotina.
+              Linguagem simples. Ação rápida. Controle total da rotina.
             </motion.p>
 
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
               {[
                 {
                   title: "Resposta sem demora",
-                  text: "Primeiro retorno e triagem para nao perder quem chegou agora.",
+                  text: "Primeiro retorno e triagem para não perder quem chegou agora.",
                 },
                 {
                   title: "Fila com prioridade",
-                  text: "O que e urgente sobe. O que pode esperar nao te interrompe.",
+                  text: "O que é urgente sobe. O que pode esperar não te interrompe.",
                 },
                 {
                   title: "Andamento com clareza",
-                  text: "Quando o cliente pergunta, voce responde com contexto e proximo passo.",
+                  text: "Quando o cliente pergunta, você responde com contexto e próximo passo.",
                 },
               ].map((item, idx) => (
                 <motion.div
@@ -250,7 +254,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               <div className="relative h-[520px] sm:h-[560px] md:h-[520px] lg:h-[560px]">
                 <div className="relative h-full w-full [perspective:1200px]">
                   {/* Desktop wrapper: center-anchored, then offset left/up via margins (no size changes). */}
-                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -ml-2 mt-4 sm:-ml-4 sm:mt-2 md:ml-10 md:mt-0 lg:ml-14 lg:-mt-2 xl:ml-20">
+                  <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -ml-2 sm:-ml-4 sm:mt-2 md:ml-10 md:mt-0 lg:ml-14 lg:-mt-2 xl:ml-20">
                     <motion.div
                       className="will-change-transform"
                       initial={{ opacity: 0, y: 14 }}
@@ -294,7 +298,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   </div>
 
                   {/* Mobile wrapper: center-anchored, then offset right/up via margins (no size changes). */}
-                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ml-48 mt-0 sm:ml-52 sm:-mt-4 md:ml-72 md:-mt-8 lg:ml-80 lg:-mt-10 xl:ml-88">
+                  <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ml-48 mt-0 sm:ml-52 sm:-mt-4 md:ml-72 md:-mt-8 lg:ml-80 lg:-mt-10 xl:ml-88">
                     <motion.div
                       className="will-change-transform"
                       initial={{ opacity: 0, y: 16 }}
@@ -361,7 +365,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                 <BrowserMockup contentClassName="aspect-[90/49] bg-zinc-100">
                   <Image
                     src="/prints/desktop/Processos.png"
-                    alt="Exemplo de atendimento e organizacao no desktop"
+                    alt="Exemplo de atendimento e organização no desktop"
                     fill
                     sizes="(max-width: 768px) 100vw, 700px"
                     className="object-contain"
@@ -370,16 +374,16 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               </FadeIn>
               <FadeIn className="md:col-span-5" delay={0.05}>
                 <div className="rounded-2xl border border-black/10 bg-white p-7 shadow-softer">
-                  <h3 className="text-lg font-semibold">Triagem que vira acao</h3>
+                  <h3 className="text-lg font-semibold">Triagem que vira ação</h3>
                   <p className="mt-2 text-sm text-zinc-600">
-                    Em vez de apagar incendio, sua equipe recebe prioridade,
-                    proxima acao e contexto para agir rapido no que importa.
+                    Em vez de apagar incêndio, sua equipe recebe prioridade,
+                    próxima ação e contexto para agir rápido no que importa.
                   </p>
                   <ul className="mt-5 space-y-3 text-sm text-zinc-700">
                     {[
                       "O que mudou hoje em cada processo",
-                      "Intimacao e prazo com prioridade",
-                      "Audiencia com data, hora e local",
+                      "Intimação e prazo com prioridade",
+                      "Audiência com data, hora e local",
                       "Carteira com fila clara (sem 200 parados)",
                     ].map((item) => (
                       <li key={item} className="flex gap-3">
@@ -392,14 +396,16 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                     <a
                       className="inline-flex h-11 items-center justify-center rounded-lg bg-black px-5 text-sm font-medium text-white shadow-softer transition hover:bg-zinc-800"
                       href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      Quero meu diagnostico
+                      Quero meu diagnóstico
                     </a>
                     <a
                       className="inline-flex h-11 items-center justify-center rounded-lg border border-black/15 px-5 text-sm font-medium text-black transition hover:bg-black/5"
                       href={demoLink}
                     >
-                      Ver demonstracao
+                      Ver demonstração
                     </a>
                   </div>
                 </div>
@@ -408,17 +414,17 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
           </div>
         </section>
 
-        <section id="prints" className="bg-zinc-50 py-16 md:py-24">
+        <section id="demonstracao" className="bg-zinc-50 py-16 md:py-24">
           <div className="mx-auto max-w-6xl px-6">
             <FadeIn>
               <p className="text-xs font-medium tracking-[0.24em] text-zinc-500">
-                PRINTS
+                DEMONSTRAÇÃO
               </p>
               <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-                Nao e so bonito. E para responder e agir mais rapido.
+                Não é só bonito. É para responder e agir mais rápido.
               </h2>
               <p className="mt-3 max-w-2xl text-pretty text-base text-zinc-600 md:text-lg">
-                Do atendimento ao andamento: tudo pensado para voce ver, decidir
+                Do atendimento ao andamento: tudo pensado para você ver, decidir
                 e responder sem se perder.
               </p>
             </FadeIn>
@@ -465,7 +471,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   <div className="mt-5 rounded-xl border border-black/10 bg-zinc-50 p-4 text-sm text-zinc-700">
                     Cliente: &quot;Tem novidade?&quot;
                     <span className="block text-zinc-500">
-                      Resumo claro do contexto e do proximo passo.
+                      Resumo claro do contexto e do próximo passo.
                     </span>
                   </div>
                 </div>
@@ -474,7 +480,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                 <BrowserMockup contentClassName="aspect-[90/49] bg-zinc-100">
                   <Image
                     src="/prints/desktop/Chat.png"
-                    alt="Exemplo de area de processos no desktop"
+                    alt="Exemplo de área de processos no desktop"
                     fill
                     sizes="(max-width: 768px) 100vw, 700px"
                     className="object-contain"
@@ -490,19 +496,19 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
             <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:items-start">
               <FadeIn className="md:col-span-7">
                 <p className="text-xs font-medium tracking-[0.24em] text-zinc-500">
-                  IMPLANTACAO
+                  IMPLANTAÇÃO
                 </p>
                 <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-                  Em poucos dias, seu escritorio sai do modo reativo.
+                  Em poucos dias, seu escritório sai do modo reativo.
                 </h2>
                 <p className="mt-3 max-w-2xl text-pretty text-base text-zinc-600 md:text-lg">
-                  A implantacao e guiada para sua rotina: perguntas iniciais,
+                  A implantação é guiada para sua rotina: perguntas iniciais,
                   triagem, prioridades e quando sua equipe assume.
                 </p>
                 <ul className="mt-6 grid grid-cols-1 gap-3 text-sm text-zinc-700 sm:grid-cols-2">
                   {[
                     "Perguntas iniciais e captura de dados",
-                    "Prioridade por tipo e urgencia",
+                    "Prioridade por tipo e urgência",
                     "Fila de follow-up e retorno",
                     "Equipe assume com contexto",
                   ].map((item) => (
@@ -524,15 +530,17 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   <div className="mt-3 text-5xl font-semibold tracking-tight">
                     R$ 297
                     <span className="ml-2 text-base font-medium text-zinc-500">
-                      / mes
+                      / mês
                     </span>
                   </div>
                   <p className="mt-3 text-sm text-zinc-600">
-                    Para comecar com atendimento, triagem e organizacao.
+                    Para começar com atendimento, triagem e organização.
                   </p>
                   <a
                     className="mt-6 inline-flex h-11 w-full items-center justify-center rounded-lg bg-black px-5 text-sm font-medium text-white shadow-softer transition hover:bg-zinc-800"
                     href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Conversar no WhatsApp
                   </a>
@@ -540,7 +548,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                     className="mt-3 inline-flex h-11 w-full items-center justify-center rounded-lg border border-black/15 px-5 text-sm font-medium text-black transition hover:bg-black/5"
                     href={demoLink}
                   >
-                    Agendar demonstracao
+                    Agendar demonstração
                   </a>
                 </div>
               </FadeIn>
@@ -559,13 +567,15 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   Se hoje esta no caos, vamos colocar ordem.
                 </h2>
                 <p className="mt-3 text-pretty text-base text-zinc-600 md:text-lg">
-                  O caminho mais rapido e WhatsApp. Em poucos minutos voce
+                  O caminho mais rápido é WhatsApp. Em poucos minutos você
                   entende como organizar atendimento e parar de perder contato.
                 </p>
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <a
                     className="inline-flex h-11 items-center justify-center rounded-lg bg-black px-5 text-sm font-medium text-white shadow-softer transition hover:bg-zinc-800"
                     href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Quero falar no WhatsApp
                   </a>
@@ -573,7 +583,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                     className="inline-flex h-11 items-center justify-center rounded-lg border border-black/15 px-5 text-sm font-medium text-black transition hover:bg-black/5"
                     href={demoLink}
                   >
-                    Quero agendar demo
+                    Quero agendar demonstração
                   </a>
                 </div>
               </FadeIn>
@@ -629,14 +639,14 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                         required
                       >
                         <option value="" disabled>
-                          Selecione uma opcao
+                          Selecione uma opção
                         </option>
-                        <option value="responder-rapido">Responder mais rapido</option>
-                        <option value="nao-sei-o-que-mudou">Nao sei o que mudou nos processos hoje</option>
-                        <option value="medo-de-prazo">Medo de perder prazo e intimacao</option>
-                        <option value="audiencia-ultima-hora">Descobrir audiencia em cima da hora</option>
-                        <option value="status-carteira">Nao tenho visao real da carteira</option>
-                        <option value="cliente-sem-resposta">Cliente pergunta e eu nao tenho resposta</option>
+                        <option value="responder-rapido">Responder mais rápido</option>
+                        <option value="nao-sei-o-que-mudou">Não sei o que mudou nos processos hoje</option>
+                        <option value="medo-de-prazo">Medo de perder prazo e intimação</option>
+                        <option value="audiencia-ultima-hora">Descobrir audiência em cima da hora</option>
+                        <option value="status-carteira">Não tenho visão real da carteira</option>
+                        <option value="cliente-sem-resposta">Cliente pergunta e eu não tenho resposta</option>
                       </select>
                     </div>
                     <button
@@ -670,15 +680,15 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               {[
                 {
                   q: "A IA substitui minha equipe?",
-                  a: "Nao. Ela tira peso da operacao e organiza prioridade. A decisao continua com sua equipe.",
+                  a: "Não. Ela tira peso da operação e organiza prioridade. A decisão continua com sua equipe.",
                 },
                 {
                   q: "Vou conseguir saber o que mudou hoje?",
-                  a: "Sim. A proposta e abrir o painel e enxergar rapidamente o que mexeu, o que pede acao e o que pode esperar.",
+                  a: "Sim. A proposta é abrir o painel e enxergar rapidamente o que mexeu, o que pede ação e o que pode esperar.",
                 },
                 {
                   q: "E sobre intimacao, prazo e audiencia?",
-                  a: "O fluxo destaca riscos e prioridades para sua equipe agir antes. Na demo, mostramos como isso entra na rotina do seu escritorio.",
+                  a: "O fluxo destaca riscos e prioridades para sua equipe agir antes. Na demo, mostramos como isso entra na rotina do seu escritório.",
                 },
                 {
                   q: "Cliente pediu andamento. Vou responder melhor?",
@@ -705,14 +715,16 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
               <a
                 className="inline-flex h-11 items-center justify-center rounded-lg bg-white px-5 text-sm font-medium text-black shadow-soft transition hover:bg-zinc-100"
                 href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Quero diagnostico no WhatsApp
+                Quero diagnóstico no WhatsApp
               </a>
               <a
                 className="inline-flex h-11 items-center justify-center rounded-lg border border-white/20 bg-white/0 px-5 text-sm font-medium text-white transition hover:bg-white/10"
                 href={demoLink}
               >
-                Agendar demonstracao
+                Agendar demonstração
               </a>
             </div>
           </div>
@@ -725,20 +737,22 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                 <div>
                   <p className="text-sm font-medium">AtendeJuri</p>
                   <p className="mt-1 text-sm text-white/60">
-                    Atendimento inteligente no WhatsApp para escritorios de advocacia.
+                    Atendimento inteligente no WhatsApp para escritórios de advocacia.
                   </p>
                 </div>
                 <div className="flex gap-6 text-sm text-white/70">
-                  <a className="hover:text-white" href={whatsappLink}>
+                  <a className="hover:text-white" href={whatsappLink} target="_blank" rel="noopener noreferrer">
                     WhatsApp
                   </a>
                   <a className="hover:text-white" href={demoLink}>
-                    Demonstracao
+                    Demonstração
                   </a>
                 </div>
               </div>
               <p className="mt-8 text-xs text-white/45">
-                AtendeJuri. Todos os direitos reservados.
+                <a href="https://www.agenciajuri.com.br/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:text-white hover:underline transition-colors">
+                  AgenciaJuri
+                </a> * Todos os direitos reservados.
               </p>
             </div>
           </div>
