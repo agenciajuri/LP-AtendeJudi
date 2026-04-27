@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "AtendeJuri | Atendimento jurídico inteligente no WhatsApp",
   description:
     "Transforme o WhatsApp do seu escritório em uma central inteligente para atender, organizar e priorizar contatos com apoio de IA.",
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
