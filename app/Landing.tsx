@@ -96,9 +96,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
 
           <a
             className="inline-flex h-10 items-center justify-center rounded-lg bg-black px-4 text-sm font-medium text-white shadow-softer transition hover:bg-zinc-800 active:scale-95"
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#preco"
           >
             <span className="hidden sm:inline">Diagnóstico no WhatsApp</span>
             <span className="sm:hidden">Diagnóstico</span>
@@ -152,15 +150,13 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
           >
             <a
               className="inline-flex h-12 items-center justify-center rounded-lg bg-white px-8 text-sm font-semibold text-black shadow-soft transition hover:bg-zinc-100 active:scale-95"
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#preco"
             >
               Falar com Consultor
             </a>
             <a
               className="inline-flex h-12 items-center justify-center rounded-lg border-2 border-white/10 bg-white/0 px-8 text-sm font-semibold text-white transition hover:bg-white/5 active:scale-95"
-              href={demoLink}
+              href="#preco"
             >
               Ver Teste Prático
             </a>
@@ -301,15 +297,13 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                     <a
                       className="inline-flex h-11 items-center justify-center rounded-lg bg-black px-5 text-sm font-medium text-white shadow-softer transition hover:bg-zinc-800 active:scale-95"
-                      href={whatsappLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="#preco"
                     >
                       Quero meu diagnóstico
                     </a>
                     <a
                       className="inline-flex h-11 items-center justify-center rounded-lg border border-black/15 px-5 text-sm font-medium text-black transition hover:bg-black/5 active:scale-95"
-                      href={demoLink}
+                      href="#preco"
                     >
                       Ver demonstração
                     </a>
@@ -578,7 +572,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   CONTATO
                 </p>
                 <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-                  Se hoje esta no caos, vamos colocar ordem.
+                  Se hoje está no caos, vamos colocar ordem.
                 </h2>
                 <p className="mt-3 text-pretty text-base text-zinc-600 md:text-lg">
                   O caminho mais rápido é WhatsApp. Em poucos minutos você
@@ -587,15 +581,13 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <a
                     className="inline-flex h-11 items-center justify-center rounded-lg bg-black px-5 text-sm font-medium text-white shadow-softer transition hover:bg-zinc-800 active:scale-95"
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#preco"
                   >
                     Quero falar no WhatsApp
                   </a>
                   <a
                     className="inline-flex h-11 items-center justify-center rounded-lg border border-black/15 px-5 text-sm font-medium text-black transition hover:bg-black/5 active:scale-95"
-                    href={demoLink}
+                    href="#preco"
                   >
                     Quero agendar demonstração
                   </a>
@@ -701,12 +693,12 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   a: "Sim. A proposta é abrir o painel e enxergar rapidamente o que mexeu, o que pede ação e o que pode esperar.",
                 },
                 {
-                  q: "E sobre intimacao, prazo e audiencia?",
+                  q: "E sobre intimação, prazo e audiência?",
                   a: "O fluxo destaca riscos e prioridades para sua equipe agir antes. Na demo, mostramos como isso entra na rotina do seu escritório.",
                 },
                 {
                   q: "Cliente pediu andamento. Vou responder melhor?",
-                  a: "Sim. Com o fluxo configurado, fica mais facil responder status com clareza, sem prometer analise juridica definitiva.",
+                  a: "Sim. Com o fluxo configurado, fica mais fácil responder status com clareza, sem prometer análise jurídica definitiva.",
                 },
                 {
                   q: "E se o escritório crescer e passar dos limites do plano?",
@@ -732,15 +724,13 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
             <div className="mt-12 flex flex-col gap-3 sm:flex-row">
               <a
                 className="inline-flex h-11 items-center justify-center rounded-lg bg-white px-5 text-sm font-medium text-black shadow-soft transition hover:bg-zinc-100 active:scale-95"
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#preco"
               >
                 Quero diagnóstico no WhatsApp
               </a>
               <a
                 className="inline-flex h-11 items-center justify-center rounded-lg border border-white/20 bg-white/0 px-5 text-sm font-medium text-white transition hover:bg-white/10 active:scale-95"
-                href={demoLink}
+                href="#preco"
               >
                 Agendar demonstração
               </a>
@@ -759,10 +749,10 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   </p>
                 </div>
                 <div className="flex gap-6 text-sm text-white/70">
-                  <a className="hover:text-white" href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                  <a className="hover:text-white" href="#preco">
                     WhatsApp
                   </a>
-                  <a className="hover:text-white" href={demoLink}>
+                  <a className="hover:text-white" href="#preco">
                     Demonstração
                   </a>
                 </div>
