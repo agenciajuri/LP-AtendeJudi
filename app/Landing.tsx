@@ -139,7 +139,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: easeOut, delay: 0.12 }}
           >
-            Integramos suas intimações (DJEN) diretamente com o seu atendimento (WhatsApp). Uma visão implacável onde o urgente sobrepõe o irrelevante.
+            Integramos suas intimações (Diários Oficiais) diretamente com o seu atendimento (WhatsApp). Uma visão implacável onde o urgente sobrepõe o irrelevante.
           </motion.p>
 
           <motion.div
@@ -436,7 +436,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-black" />
-                      <span>1 OAB monitorada (DJEN)</span>
+                      <span>1 OAB monitorada (Diários Oficiais)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-black" />
@@ -486,7 +486,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-black" />
-                      <span>3 OABs monitoradas (DJEN)</span>
+                      <span>3 OABs monitoradas (Diários Oficiais)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-black" />
