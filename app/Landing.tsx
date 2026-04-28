@@ -10,6 +10,7 @@ type Props = {
   whatsappLink: string;
   demoLink: string;
   formAction: string;
+  redirectLink: string;
 };
 
 const easeOut = [0.22, 1, 0.36, 1] as const;
@@ -39,7 +40,7 @@ function FadeIn({
   );
 }
 
-export function Landing({ whatsappLink, demoLink, formAction }: Props) {
+export function Landing({ whatsappLink, demoLink, formAction, redirectLink }: Props) {
   const reduceMotion = useReducedMotion();
   const heroRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
@@ -91,6 +92,9 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
             </a>
             <a className="hover:text-zinc-950" href="#faq">
               FAQ
+            </a>
+            <a className="font-medium text-zinc-900 hover:text-black" href={redirectLink}>
+              Entrar
             </a>
           </div>
 
@@ -407,7 +411,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   Pronto para escalar o seu escritório?
                 </h2>
                 <p className="mx-auto mt-3 max-w-2xl text-pretty text-base text-zinc-600 md:text-lg">
-                  14 dias grátis para testar. Sem cartão de crédito. Economize 17% assinando o plano anual (equivalente a 2 meses grátis).
+                  7 dias grátis para testar. Sem cartão de crédito. Economize 17% assinando o plano anual (equivalente a 2 meses grátis).
                 </p>
               </FadeIn>
             </div>
@@ -449,7 +453,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   </ul>
                   <a
                     className="mt-8 inline-flex h-11 w-full items-center justify-center rounded-lg border border-black/15 bg-white px-5 text-sm font-medium text-black transition hover:bg-black/5 active:scale-95"
-                    href={whatsappLink}
+                    href={redirectLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -503,7 +507,7 @@ export function Landing({ whatsappLink, demoLink, formAction }: Props) {
                   </ul>
                   <a
                     className="mt-8 inline-flex h-11 w-full items-center justify-center rounded-lg bg-black px-5 text-sm font-medium text-white shadow-softer transition hover:bg-zinc-800 active:scale-95"
-                    href={whatsappLink}
+                    href={redirectLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
