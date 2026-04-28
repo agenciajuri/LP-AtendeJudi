@@ -752,12 +752,15 @@ export function Landing({ whatsappLink, demoLink, formAction, redirectLink }: Pr
                     Atendimento inteligente no WhatsApp para escritórios de advocacia.
                   </p>
                 </div>
-                <div className="flex gap-6 text-sm text-white/70">
+                <div className="flex flex-col sm:flex-row gap-6 text-sm text-white/70">
                   <a className="hover:text-white" href="#preco">
                     WhatsApp
                   </a>
                   <a className="hover:text-white" href="#preco">
                     Demonstração
+                  </a>
+                  <a className="hover:text-white" href="/politica-de-privacidade">
+                    Política de Privacidade
                   </a>
                 </div>
               </div>
